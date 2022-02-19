@@ -1,0 +1,35 @@
+.main__section-profession {
+  padding-top: 47px;
+}
+
+.profession-list {
+  display: flex;
+
+  &__item {
+    margin-right: 30px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.profession-list__container {
+  position: relative;
+}
+
+.profession-list__text {
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  padding: 27px;
+  transform: translateY(-70px);
+}

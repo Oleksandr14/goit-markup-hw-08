@@ -1,0 +1,16 @@
+body {
+  font-family: Roboto, Aileron, Comfortaa, sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+  padding-top: 80px;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
