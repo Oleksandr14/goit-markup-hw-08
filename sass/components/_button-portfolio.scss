@@ -1,14 +1,36 @@
 .buttons-list {
-  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
-
-  &__item {
-    margin-right: 8px;
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
 
-  &__item:last-child {
-    margin-right: 0;
+.buttons-list__item {
+  @media screen and (max-width: 767px) {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 15px;
+    }
+    &:not(:nth-child(3)) {
+      margin-right: 8px;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    & + & {
+      margin-left: 8px;
+    }
   }
 }
 
