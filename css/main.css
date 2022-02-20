@@ -715,6 +715,12 @@ img {
   padding-top: 47px;
 }
 
+@media screen and (max-width: 1199px) {
+  .main__section-profession {
+    display: none;
+  }
+}
+
 .profession-list {
   display: flex;
 }

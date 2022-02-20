@@ -1,5 +1,8 @@
 .main__section-profession {
   padding-top: 47px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .profession-list {
