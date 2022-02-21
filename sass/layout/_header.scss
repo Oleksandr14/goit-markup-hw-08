@@ -25,7 +25,9 @@
 .navigate {
   display: flex;
   margin-left: 93px;
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .site-nav {
@@ -76,7 +78,9 @@
 .contact-nav {
   display: flex;
   margin-left: auto;
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   &__item + &__item {
     margin-left: 50px;
@@ -114,9 +118,27 @@
   }
 }
 
-/*Моб меню*/
+/*------------------Мобильное меню------------*/
+.mob-menu {
+  position: fixed;
 
-.open-menu-btn {
+  padding-top: 10px;
+  padding-bottom: 48px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white-color);
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.open-menu-btn,
+.close-menu-btn {
   width: 40;
   height: 40;
   padding: 0;
@@ -124,4 +146,51 @@
   background-color: transparent;
   display: block;
   margin-left: auto;
+}
+
+.open-menu-btn__icon {
+  fill: #000000;
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: #212121;
+
+  &--current {
+    color: var(--accent-color);
+  }
+}
+
+.mob-contact {
+  margin-bottom: 64px;
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mob-contact__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  color: #757575;
+
+  &--current {
+    font-size: 34px;
+    color: var(--accent-color);
+  }
+}
+
+.mob-network {
+  display: flex;
 }
