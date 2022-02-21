@@ -23,15 +23,12 @@
     <!----------------------------- Хедер ------------------------------------------>
 
     <!------------------------------ Шапка сайта ---------------------------------->
-    <!--
-    <header class="header">
+   <!-- 
+   <header class="header">
       <div class="container header__contain">
         
-
         <a href="" class="logo"> <span class="logo__accent">Web</span>Studio</a>
-
      
-
         <nav class="navigate">
           <ul class="site-nav list">
             <li class="site-nav__item">
@@ -43,9 +40,7 @@
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
           </ul>
         </nav>
-
        
-
         <ul class="contact-nav list">
           <li class="contact-nav__item">
             <a href="mailto:info@devstudio.com" class="contact-nav__link contact-nav__link--flex"
@@ -64,15 +59,20 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="open-menu-btn">
+          <svg class="open-menu-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
-    -->
+    --->
 
     <!-- Основное содержимое сайта -->
 
-    <main class="main">
+  <main class="main">
       <!-------------------------- Герой ------------------------------------->
-
+<!--
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">
@@ -81,11 +81,11 @@
           </h1>
           <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section>
+      </section>-->
 
       <!------------------ Преимущества ----------------->
 
-      <section class="section main__section-preference">
+      <!-- <section class="section main__section-preference">
         <div class="container">
           <ul class="feature-list list">
             <li class="feature-list__item feature-list__item--antenna">
@@ -114,11 +114,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>---->
 
       <!-------------------------- Чем мы занимаемся ---------------------------->
 
-      <section class="section main__section-profession">
+      <!--- <section class="section main__section-profession">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="profession-list list">
@@ -142,24 +142,24 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>--->
 
       <!--------------------- Наша команда ------------------->
-
+ <!---
       <section class="section main__section-team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
               <picture>
-                <source
+                 <source
                   srcset="
-                    ./images/mobile/team-1-480@1x.jpg 1x,
-                    ./images/mobile/team-1-480@2x.jpg 2x
+                    ./images/desktop/team-1-1200@1x.jpg 1x,
+                    ./images/desktop/team-1-1200@2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                 />
-                <source
+                 <source
                   srcset="
                     ./images/tablet/team-1-768@1x.jpg 1x,
                     ./images/tablet/team-1-768@2x.jpg 2x
@@ -168,11 +168,13 @@
                 />
                 <source
                   srcset="
-                    ./images/desktop/team-1-1200@1x.jpg 1x,
-                    ./images/desktop/team-1-1200@2x.jpg 2x
+                    ./images/mobile/team-1-480@1x.jpg 1x,
+                    ./images/mobile/team-1-480@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  media="(max-width: 767px)"
                 />
+               
+               
                 <img
                   src="./images/im1.jpg"
                   alt="Мужчина в красной рубашке в очках с бородой"
@@ -215,14 +217,14 @@
             </li>
             <li class="team-list__item">
               <picture>
-                <source
+                 <source
                   srcset="
-                    ./images/mobile/team-2-480@1x.jpg 1x,
-                    ./images/mobile/team-2-480@2x.jpg 2x
+                    ./images/desktop/team-2-1200@1x.jpg 1x,
+                    ./images/desktop/team-2-1200@2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                 />
-                <source
+                 <source
                   srcset="
                     ./images/tablet/team-2-768@1x.jpg 1x,
                     ./images/tablet/team-2-768@2x.jpg 2x
@@ -231,11 +233,13 @@
                 />
                 <source
                   srcset="
-                    ./images/desktop/team-2-1200@1x.jpg 1x,
-                    ./images/desktop/team-2-1200@2x.jpg 2x
+                    ./images/mobile/team-2-480@1x.jpg 1x,
+                    ./images/mobile/team-2-480@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  media="(max-width: 767px)"
                 />
+               
+               
                 <img
                   src="./images/im2.jpg"
                   alt="Девушка блондинка в очках"
@@ -278,14 +282,14 @@
             </li>
             <li class="team-list__item">
               <picture>
-                <source
+                 <source
                   srcset="
-                    ./images/mobile/team-3-480@1x.jpg 1x,
-                    ./images/mobile/team-3-480@2x.jpg 2x
+                    ./images/desktop/team-3-1200@1x.jpg 1x,
+                    ./images/desktop/team-3-1200@2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                 />
-                <source
+                 <source
                   srcset="
                     ./images/tablet/team-3-768@1x.jpg 1x,
                     ./images/tablet/team-3-768@2x.jpg 2x
@@ -294,11 +298,13 @@
                 />
                 <source
                   srcset="
-                    ./images/desktop/team-3-1200@1x.jpg 1x,
-                    ./images/desktop/team-3-1200@2x.jpg 2x
+                    ./images/mobile/team-3-480@1x.jpg 1x,
+                    ./images/mobile/team-3-480@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  media="(max-width: 767px)"
                 />
+               
+               
                 <img
                   src="./images/im3.jpg"
                   alt="Мужчина в светло голубой рубашке"
@@ -341,14 +347,14 @@
             </li>
             <li class="team-list__item">
               <picture>
-                <source
+                 <source
                   srcset="
-                    ./images/mobile/team-4-480@1x.jpg 1x,
-                    ./images/mobile/team-4-480@2x.jpg 2x
+                    ./images/desktop/team-4-1200@1x.jpg 1x,
+                    ./images/desktop/team-4-1200@2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                 />
-                <source
+                 <source
                   srcset="
                     ./images/tablet/team-4-768@1x.jpg 1x,
                     ./images/tablet/team-4-768@2x.jpg 2x
@@ -357,11 +363,13 @@
                 />
                 <source
                   srcset="
-                    ./images/desktop/team-4-1200@1x.jpg 1x,
-                    ./images/desktop/team-4-1200@2x.jpg 2x
+                    ./images/mobile/team-4-480@1x.jpg 1x,
+                    ./images/mobile/team-4-480@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  media="(max-width: 767px)"
                 />
+               
+               
                 <img
                   src="./images/im4.jpg"
                   alt="Мужчина в темной футболке с бородой"
@@ -404,11 +412,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
+      --->
 
       <!-------------------Постоянные клиенты-------------------->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients list">
@@ -457,21 +466,18 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main>--->
 
     <!--------------------------------- Футер --------------------------->
-    <!--
+    
     <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <div class="footer-div">
           
-
           <a href="" class="logo logo--footer-color">
             <span class="logo__accent">Web</span>Studio</a
           >
-
           
-
           <address class="adress">
             <ul class="adress-footer list">
               <li class="adress-footer__list">
@@ -488,12 +494,9 @@
             </ul>
           </address>
         </div>
-
        
-
         <div class="networks">
           <h3 class="networks__title">Присоединяйтесь</h3>
-
           <ul class="footer-socials list">
             <li class="footer-socials__item">
               <a href="" class="footer-socials__link"
@@ -525,9 +528,7 @@
             </li>
           </ul>
         </div>
-
         
-
         <div class="container-form">
           <h3 class="container-form__title">Подпишитесь на рассылку</h3>
           <form class="form-footer">
@@ -548,24 +549,24 @@
         </div>
       </div>
     </footer>
-  -->
+  
     <!--------------Модалка-Бекдроп--------------->
-
-    <div class="backdrop is-hidden" data-modal>
+ 
+   <!-- <div class="backdrop is-hidden" data-modal>-->
       <!----------------Модалка------------->
 
-      <div class="modal">
+      <!---------------- <div class="modal">-->
         <!----Кнопка модалки-->
 
-        <button type="button" class="modal-btn" data-modal-close>
+        <!-- <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-btn__icon" width="11" height="11">
             <use href="./images/icons.svg#icon-vector-two"></use>
           </svg>
-        </button>
+        </button>-->
 
         <!-------------------Форма--------------->
 
-        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+       <!-- <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
 
         <form class="modal-form">
           <div class="modal-field modal__container">
@@ -621,7 +622,7 @@
             <button type="submit" class="container-btn__button">Отправить</button>
           </div>
         </form>
-      </div>
+      </div>-->
     </div>
     <script src="./js/modal.js"></script>
   </body>
