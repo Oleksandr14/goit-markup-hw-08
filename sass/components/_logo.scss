@@ -1,8 +1,6 @@
 .logo {
   font-family: Raleway, Roboto, Aileron, sans-serif;
   font-weight: 700;
-  /*font-size: 26px;
-  line-height: 1.19;*/
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--logo-color);
@@ -10,6 +8,15 @@
     font-size: 24px;
     line-height: 1.16;
     text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.16;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 

@@ -70,8 +70,6 @@ img {
 .logo {
   font-family: Raleway, Roboto, Aileron, sans-serif;
   font-weight: 700;
-  /*font-size: 26px;
-  line-height: 1.19;*/
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--logo-color);
@@ -82,6 +80,21 @@ img {
     font-size: 24px;
     line-height: 1.16;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.16;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
@@ -1092,14 +1105,37 @@ img {
   padding-bottom: 60px;
 }
 
-.footer__container {
-  /*display: flex;
-    align-items: baseline;*/
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    text-align: center;
+  }
 }
 
-.footer-div {
-  margin-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-tablet {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-tablet {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-div {
+    margin-bottom: 60px;
+  }
 }
 
 /*---------------------------Лого-------------------------------------*/
@@ -1137,9 +1173,16 @@ img {
 }
 
 /*--------Присоединяйтесь-футер------*/
-.networks {
-  margin-bottom: 60px;
-  /*margin-left: 70px;*/
+@media screen and (max-width: 1199px) {
+  .networks {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .networks {
+    margin-left: 70px;
+  }
 }
 
 .networks__title {
@@ -1181,8 +1224,10 @@ img {
 }
 
 /*------------Подпишитесь на рассылку-----------*/
-.container-form {
-  /*margin-left: 93px;*/
+@media screen and (min-width: 1200px) {
+  .container-form {
+    margin-left: 93px;
+  }
 }
 
 .container-form__title {
@@ -1194,12 +1239,23 @@ img {
   color: var(--white-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .container-form__title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer {
+    display: flex;
+  }
+}
+
 .form-footer__email {
   width: 100%;
   margin-bottom: 20px;
   outline: none;
   padding: 15px;
-  /*width: 358px;*/
   background-color: var(--third-background-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1218,27 +1274,44 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-footer__container {
-  position: relative;
-  display: inline-block;
-  /*margin-left: 12px;*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-footer__email {
+    width: 450px;
+    margin: 0 auto 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer__email {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 .form-footer__button {
-  padding-right: 61px;
-  padding-left: 28px;
+  position: relative;
+  display: block;
   min-width: 200px;
   height: 50px;
+  margin: 0 auto;
+  padding-right: 61px;
+  padding-left: 28px;
+  border: 1px solid transparent;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--white-color);
-  border: 1px solid transparent;
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer__button {
+    margin-left: 12px;
+  }
 }
 
 .form-footer__icon {
