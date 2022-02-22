@@ -153,7 +153,7 @@
 
 /*------------------Мобильное меню------------*/
 .open-menu-btn__icon {
-  @media screen and (min-width: 667px) {
+  @media screen and (min-width: 767px) {
     display: none;
   }
 }
